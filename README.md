@@ -1,5 +1,9 @@
 # ESP32-LWOS
-A simple library I made for my esp32 projects where I am only able to use Arduino OTA. This library ensures you don't accidently lock yourself out of OTA and provides simple watchdog capabilities
+A simple library I made for my esp32 projects where I am only able to use Arduino OTA. This library ensures you don't accidently lock yourself out of OTA and provides simple watchdog capabilities.
+If its unable to connect to WiFi, it starts its own.
+If it gets stuck in a reboot loop, it will boot into a safe mode where only OTA is enabled.
+If it gets stuck in an infinite while loop, it will restart the esp32.
+Optionaly, if it fails to connect to Wifi, it will start its own AND go into an OTA only mode via "UseWifiFailoverPanic(bool)"
 
 Install instructions:
 Download LWOS.zip, wnzip the folder and add it to your libraries folder for Arduino IDE located In your sketch folder (Ussually Documents/ArduinoIDE/libraries)
