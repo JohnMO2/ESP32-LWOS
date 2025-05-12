@@ -2,7 +2,7 @@
 A simple library I made for my esp32 projects where I am only able to use Arduino OTA. This library ensures you don't accidently lock yourself out of OTA and provides simple watchdog capabilities
 
 Install instructions:
-Unzip the folder and add to your libraries folder for Arduino IDE located In your sketch folder (Ussually Documents/ArduinoIDE/libraries)
+Download LWOS.zip, wnzip the folder and add it to your libraries folder for Arduino IDE located In your sketch folder (Ussually Documents/ArduinoIDE/libraries)
 
 Example Code:
 ```
